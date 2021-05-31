@@ -1,0 +1,192 @@
+
+/* 라운지 헤더 */
+
+header.lounge {
+	position: relative;
+    background: #141617 url(../images/lounge_header_bg.png) no-repeat bottom;
+    width: 270px;
+    height: 100vh;
+    padding: 20px 40px; 
+    box-sizing: border-box;
+    border: 0;
+    float: left;
+}
+header.lounge .personal {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+header.lounge a {
+    display: block;
+}
+header.lounge .personal a.personal_modify {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    top: 30px;
+    left: 15px;
+    background: url(../images/video_icon_setting.svg) no-repeat center/60%;
+}
+header.lounge .personal a.personal_modify i {
+    font-size: 20px; 
+    width: 40px;
+    line-height: 40px;
+    color: #eee;   
+}
+header.lounge .personal a.personal_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: #939393;
+    margin-bottom: 10px;
+}
+
+header.lounge .personal a.personal_img i {
+    line-height: 80px;
+    font-size: 35px;
+}
+
+header.lounge .personal span {
+    transform: skew(-0.03deg);
+    display: block;
+    line-height: 1.5;
+}
+header.lounge .personal span.name {
+    height: 20px;
+    font-size: 16px;
+}
+header.lounge .personal span.id {
+    font-size: 14px;
+    color: #d8d8d8;
+}
+header.lounge .lounge_wrap .start_btn {
+    background: #ee0000;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    transition: .3s;
+}
+
+header.lounge .lounge_wrap .logout_btn {
+    color: #d8d8d8;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;    
+}
+
+/* 라운지 본문 */
+.lounge_cont { 
+    float: left;
+    width: calc(100% - 270px);
+    background: #eeeeee;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+.lounge_cont h3 {
+    font-size: 43px;
+    font-weight: bold;
+    color: #111;
+}
+.lounge_cont h3:before {
+    content: "HUAWEI Lounge";
+    color: #999;
+    font-size: 14px;
+    display: block;
+    margin-left: 3px;
+}
+.lounge_cont .video_meeting {
+    background: #fff;
+    margin-top: 25px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    width: 60%;
+    overflow-y: auto;
+}
+.lounge_cont .video_meeting h4 {
+    /* border-bottom: 1px solid #d8d8d8; */
+    line-height: 45px;
+    height: 45px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    padding: 0 20px;
+    display: inline-block;
+    border-bottom: 4px solid #ee0000;
+}
+
+.video_m_list {
+    border-top: 1px solid #d8d8d8;
+    padding: 10px 0;
+    text-align: center;
+}
+.video_m_list li {
+    height: 40px;
+    line-height: 40px;
+    padding: 8px 20px;
+    border-bottom: 1px solid #eee;
+}
+.video_m_list li:last-child {
+    border: 0;
+}
+.video_m_list li > a, .video_m_list li > span {
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-family: 'Noto Sans KR';
+    color: #333;
+}
+
+.video_m_list li > a.video_title {
+    width: 50%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.video_m_list li > a.video_title a {
+    width: 100%;
+    height: 40px;
+    background: #ccf;
+    text-align: left;
+    
+}
+.video_m_list li > span {
+    width: 30%;
+    display: inline-block;
+    color: #666;
+    text-align: center;
+    font-size: 13px; /* 수정 */
+}
+.video_m_list li a.watch {
+    width: 20%;
+    color: #fff;
+    background: #ee0000;
+    border-radius: 50px;
+    transition: .3s;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    line-height: 33px;
+}
+.video_m_list li a.watch i {
+    font-size: 14px;
+    color: #fff;
+    line-height: 33px;
+}

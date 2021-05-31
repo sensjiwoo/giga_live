@@ -1,0 +1,396 @@
+@media (max-width:480px){    	
+	
+	.pc {
+		display: none !important ;
+	}
+  
+/* 라운지 헤더 */
+header.lounge { /* 수정*/
+	width: 100vw;
+    height: 70px;
+    position: fixed;
+    box-sizing: border-box;
+    border: 0;
+    float: left;
+    background: #0a0a0a;
+    padding: 0;
+}
+
+header.lounge .lounge_wrap {
+    width: 88vw;
+    position: relative;
+    margin: 0 auto;
+}
+
+header.lounge .lounge_wrap h1 {
+    padding: 18px 0;
+    height: auto;
+}
+
+header.lounge .lounge_menu_btn {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    z-index: 10;
+    display: block;
+    width: 45px;
+    height: 50px;
+
+/* 0527 수정 */
+width: 46px;
+height: 46px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+padding: 8px;
+
+
+
+
+}
+/* 햄버거 버튼 애니메이션 */
+.hamburger {
+    width: 45px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+    /* margin: 10px auto; */
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+/* 0527 수정 */
+width: 30px;
+height: 2px;
+}
+
+
+
+
+
+.lounge #ham_middle {
+    /* width: 38px;  0527 수정 (삭제) */
+    /* margin-right: 0;  0527 수정 (삭제) */
+}
+
+.hamburger_btn.active .hamburger:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger_btn.active .hamburger:nth-child(1){
+    transform: translateY(13px) rotate(45deg); /*  0527 수정  */
+}
+.hamburger_btn.active .hamburger:nth-child(3){
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+
+
+header.lounge .lounge_menu_btn img {
+    width: 40px;
+    padding: 5px
+}
+
+.lounge_blank { 
+    width: 100vw;
+    height: 70px;
+    display: block;
+}
+
+/* 라운지_메뉴 내용 */
+.lounge_menu_cont {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    background: #333;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0 0 0;
+    z-index: 20;
+    overflow: hidden;
+}
+header.lounge .personal {
+    padding: 17vw 0 0;
+}
+header.lounge .personal a.personal_modify {
+    width: 45px;
+    height: 45px;
+    top: 35px;
+    left: 70px;
+}
+header.lounge .personal a.personal_modify i {
+    width: 45px;
+    height: 45px;
+    font-size: 8vw;
+}
+header.lounge .lounge_wrap .start_btn {
+    background: #ee0000;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    width: 80vw;
+    margin: 0 auto;
+}
+header.lounge .personal span.name {
+    font-size: 18px;
+}
+header.lounge .personal span.id {
+    font-size: 16px;
+}
+/* 0522 수정 */
+.lounge_wrap .lounge_menu_cont .lounge_menu_close {
+    position: absolute;
+    right: 6vw;
+    top: 12px;
+    z-index: 10;
+    display: flex; /* 0527 수정 */
+    justify-content: center; /* 0527 추가 */
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+}
+.lounge_wrap .lounge_menu_cont .lounge_menu_close > img {
+    width: 10px;
+}
+.lounge_wrap .lounge_menu_cont .lounge_menu_close img {
+    width: 80%; /* 0527 수정 */
+}
+header.lounge .lounge_wrap .logout_btn {
+    bottom: 17vw;
+}
+
+/* 라운지 콘텐츠 */
+.lounge_cont { /* 수정 */ 
+    background: #f00;
+    float: none;
+    width: 100vw;
+    background: #eeeeee;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5vw 5vw 15vw;
+    height: 100vh;
+    overflow: auto;
+    display: block;
+}
+
+.lounge_cont h3 {
+    font-size: 32px;
+    margin-top: 70px;  
+
+}
+.lounge_cont .video_meeting { /* 수정 */
+    margin-top: 15px;
+    height: auto; 
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.lounge_cont .video_meeting h4 {
+    line-height: 40px;
+    height: 40px;
+    font-size: 24px;
+    padding: 0 10px;
+    border-bottom: 3px solid #ee0000;  
+}
+.video_m_list li {
+    height: 60px;
+    line-height: 40px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.video_m_list li:last-child {
+    border: 0;
+}
+
+
+/* 수정시작 */
+.video_m_list li > a {    
+    display: block;
+}
+.video_m_list li .date {
+    width: auto;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    display: inline;
+    color: #666;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px; /* 추가 */
+    top: 38px; /* 추가 */
+}
+
+.video_m_list li > a.video_title {
+    width: calc(100% - 55px);
+    font-size: 16px;
+    line-height: 33px;
+    margin-right: 10px;
+} 
+
+.video_m_list li a.watch {
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    background: #ee0000;
+    border-radius: 50px;
+    transition: .3s;
+    box-sizing: border-box;
+    line-height: 45px;
+    border: 1px solid #eee;
+    padding-left: 3px;
+    margin: 7px 0;
+}
+
+/* 라운지_방송시작하기 */
+.popup_modal .popup_form .pop_header li a.on {
+    font-size: 5.2vw;
+    color: #fff;
+    font-weight: bold;
+    background: #0a0a0a;
+}
+
+
+   
+/* 모바일 video _header */
+header.video {
+    height: 70px;
+    background: #111;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+}
+header.video .wrap2 {
+    width: 88vw; 
+    margin: 0 auto;
+    position: relative;
+}
+header.video .wrap2 h1 {
+    margin-left: 0;
+}
+header.video h1 a {
+    width: 150px;
+}
+
+header.video a.chat_btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0; 
+    top: 8px;
+    font-size: 12px;
+}
+
+header.video .video_btn {
+position: absolute;
+right: 0; 
+top: 8px;
+width: 50px;
+height: 50px;
+overflow: hidden;
+}
+header.video .video_menu_btn {
+width: 50px;
+height: 50px;
+display: block;
+background: none;
+position: absolute;
+top: 10px;
+right: 0;
+}
+header.video .video_menu_btn img {
+width: 40px;
+padding: 5px;
+}
+
+header.video .video_btn:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+header.video .video_btn > div {
+    float: left;
+    
+}
+header.video .video_btn .quality {
+    margin-right: 20px;
+    padding: 10px 0;
+}
+header.video .video_btn .quality select {
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+header.video .video_btn .video_set li {
+    float: left;
+    height: 50px;
+    margin-right: 10px;
+}
+header.video .video_btn a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+header.video .video_btn .chat_leave {    
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #ccc;   
+}
+.header_blank { 
+    display: block;
+    width: 100vw;
+    height: 70px;
+}
+
+ 
+    
+
+} /* 모바일용 */
+
+
+@media (min-width:481px) and (max-width:640px) {   	
+    .pc {
+		display: none !important;
+	}
+    
+
+} /* 모바일가로,태블릿 */
+
+@media (min-width:641px) and (max-width:1440px) {   	
+    .mob {
+        display: none !important;
+    }
+    
+    .lounge_cont .video_meeting {
+        width: 80%;
+    }  
+ 	
+} /* 태블릿 가로 */
+
+@media (min-width:1441px) {   
+	.mob {
+		display: none !important;
+	}
+} /*pc용*/
+
+@media (hover: hover) {
+    
+    header.lounge .lounge_wrap .start_btn:hover {
+        background: #fff;
+        color: #ee0000;
+        font-weight: bold;     
+    }
+    .popup_modal.start_popup .pop_cont .conference_cont .conference_make:hover {
+        background: #0a0a0a;
+    }
+} /* hover 제거용 */

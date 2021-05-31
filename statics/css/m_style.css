@@ -1,0 +1,400 @@
+@media (max-width:480px) {    	
+	
+	.pc {
+		display: none !important ;
+	}
+    .wrap { 
+        width: 88vw; 
+        margin: 0 auto; 
+    }   
+    header h1 a {
+        width: 150px;
+        height: 34px;
+        display: block;
+    }  
+    header h1 a img {
+        width: 150px;
+        height: 34px;
+    }
+    header .top_menu .top_menu_btn {
+        padding: 4px;
+        box-sizing: border-box;
+    }
+    header .top_menu .top_menu_btn img {
+        width: 34px;
+    }
+    .vb .vb_wording {
+        padding: 15vw 0 15vw;
+    }
+    .vb .vb_wording .wording_txt:before {
+        width: 25px;
+        height: 3px;
+        margin: 0 2vw 2vw;
+    }
+    .vb .vb_wording .wording_txt {       
+        font-size: 10vw;
+    }
+    .vb .vb_wording .wording_txt .point {
+        font-size: 12vw;
+    }
+    .vb .vb_wording form {
+        width: 100%;
+    }
+    .vb .vb_wording form input {
+        width: 100%;
+        height: 50px;
+    }
+    .vb .vb_wording form button {
+        top: 120px;
+        height: 50px;
+        width: 49%;
+        border-radius: 5px;
+        font-size: 16px;        
+    }   
+    .vb .vb_wording form button.login_btn {
+        left: 0;
+    }
+
+    .vb .vb_txt {
+        margin-top: 50px;
+        padding: 40px 0 50px;
+    }
+    .vb .vb_txt .wrap {
+        display: block;        
+    }
+    .vb .vb_txt dl { 
+        width: 100%;        
+    }
+    .vb .vb_txt dl:first-child dd {
+		margin-bottom: 20px;        
+	} 
+    .vb .vb_txt dl dt {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .vb .vb_txt dl dt span {
+        font-size: 20px;
+    }   
+    .vb .vb_txt dl dd {
+        font-size: 14px;
+    }
+    .cont .cont_txt {
+        height: 220px;
+        text-align: center;
+        background: none;
+    }
+
+    .cont .cont_txt b.cont_num {        
+        font-size: 24px;
+        color: #ee0000;
+    }
+    .cont .cont_txt b.cont_num:after {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background: #ee0000;
+        display: block;
+        position: relative; 
+        left: 50%;
+        margin: 10px 0 10px -5px;
+    }
+    .cont .cont_txt b {
+        text-align: center;
+    }
+    .cont .cont_txt h3 {        
+        font-size: 20px;
+        color: #111;
+        text-align: center;
+        margin: 2vw 0;
+    }
+    .cont .cont_txt p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 1.8;	
+        color: #333;
+    }
+    .cont > div { 
+        height: 420px;
+    }
+
+    .cont .cont1, .cont .cont2, .cont .cont3 { 
+        background:none;
+    }
+    .cont_bg { 
+        height: 200px;
+    }
+
+    footer { 
+        position: static;
+    }
+    footer .footer_select {
+        display: none;
+    }
+    footer .wrap .footer_txt {
+        line-height: 1.8;
+        font-size: 13px;
+    }
+    footer .wrap .footer_txt address { 
+    font-size: 12px;
+    }
+
+    #top.hide { /* 수정 0526 오후 추가 */ 
+        display: none;
+    }
+
+
+}/* 모바일용 */
+
+
+@media (min-width:481px) and (max-width:640px) {   	
+    .pc {
+		display: none !important;
+	}
+    .vb .vb_txt {
+        padding: 30px 0;
+    }
+    .vb .vb_wording .wording_txt {       
+        font-size: 5.5vw;
+    }
+    .vb .vb_wording .wording_txt .point {
+        font-size: 6vw;
+    }    
+    .vb .vb_txt .wrap {
+        display: block;        
+    }
+    .vb .vb_txt dl { 
+        width: 100%; 
+    }
+    .vb .vb_txt dl:first-child dd {
+		margin-bottom: 20px;        
+	} 
+    .vb .vb_txt dl dt {
+        font-size: 18px;
+    }
+    .vb .vb_txt dl dt span {
+        font-size: 20px;
+    }
+    .vb .vb_txt dl dd {
+        font-size: 16px;
+    }    
+    .cont > div { 
+        height: 470px;
+    }
+ 
+    .vb .vb_wording {
+        padding: 15vw 0 15vw;
+    }
+
+    .vb .vb_wording .wording_txt {
+        font-size: 6vw;
+    }
+    .vb .vb_wording form {
+        width: 100%;
+    }
+    .vb .vb_wording form input {
+        width: 50%;
+        height: 50px;
+    }
+    .vb .vb_wording form button {
+        top: 0;
+        height: 110px;
+        width: 24%;
+        border-radius: 5px;
+        font-size: 14px;        
+    }   
+    .vb .vb_wording form button.login_btn {
+        right: 25%;
+    }
+    .cont .cont_txt b.cont_num {        
+        font-size: 24px;
+        color: #ee0000;
+    }
+    .cont .cont_txt b.cont_num:after {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background: #ee0000;
+        display: block;
+        position: relative; 
+        left: 50%;
+        margin: 10px 0 10px -5px;
+    }
+    .cont .cont_txt b {
+        text-align: center;
+    }
+    .cont .cont_txt h3 {        
+        font-size: 20px;
+        color: #111;
+        text-align: center;
+        margin: 2vw 0;
+    }
+    .cont .cont_txt p {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.6;	
+        color: #333;
+    }
+    .cont .cont1, .cont .cont2, .cont .cont3 { 
+        background:none;
+    }
+    
+    .cont .cont_txt {
+        height: 220px;
+        background: none;        
+    }
+    .cont .cont_txt b.cont_num {        
+        font-size: 24px;
+        color: #ee0000;
+    }
+    .cont .cont_txt h3 {        
+        font-size: 18px;
+        color: #111;
+    }
+
+    footer .footer_select {
+        display: none;
+    }
+
+
+    
+
+} /* 모바일가로,태블릿 */
+
+@media (min-width:641px) and (max-width:1023px) {   	
+    .mob {
+        display: none !important;
+    }
+    .vb .vb_wording .vb_bg .vb_imgset {
+        display: none;
+    }
+    .vb .vb_wording form {
+        width: 100%;
+    }
+    .vb .vb_wording .wording_txt {       
+        font-size: 5vw;
+    }
+    .vb .vb_wording .wording_txt .point {
+        font-size: 5.6vw;
+    }    
+    .vb .vb_txt {
+        padding: 30px 0 40px;
+    }
+    .vb .vb_txt .wrap {
+        display: block;        
+    }
+    .vb .vb_txt dl { 
+        width: 100%;
+    }
+    .vb .vb_txt dl:first-child dd {
+		margin-bottom: 20px;        
+	} 
+    .vb .vb_txt dl dt {
+        font-size: 18px;
+    }
+    .vb .vb_txt dl dt span {
+        font-size: 20px;
+    }
+    .vb .vb_txt dl dd {
+        font-size: 15px;
+    }     
+    .cont > div { 
+        height: 350px;
+    }
+    .cont .cont_txt {
+        height: 350px;
+    }
+    .cont .cont_txt b.cont_num {        
+        font-size: 4vw;
+    }
+    .cont .cont_txt h3 {        
+        font-size: 3vw
+    }
+    .cont .cont_txt p {
+        line-height: 1.8;	
+        font-size: 16px;
+    }
+    .cont .cont_txt > a { 
+        width: 180px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+ 	
+} /* 태블릿 가로 */
+
+@media (min-width:1024px) and (max-width:1440px) { 
+    .mob {
+        display: none !important;
+    }  	
+    .vb .vb_wording .vb_bg .vb_imgset {
+        display: none;
+    }
+    .vb .vb_wording .wording_txt {       
+        font-size: 4vw;
+    }
+    .vb .vb_wording .wording_txt .point {
+        font-size: 55px;
+    }
+    .vb .vb_txt dl {	
+        width: 100%;
+        margin-right: 0;
+    }
+    .vb .vb_txt dl dt {
+        font-size: 17px;
+    }
+    .vb .vb_txt dl dt span {
+        font-size: 20px;
+    }
+    .vb .vb_txt dl dd {
+        font-size: 15px;
+        width: 91%;
+    }      
+    .cont > div { 
+        height: 450px;
+    }
+    .cont .cont_txt {
+        height: 450px;
+    }
+    .cont .cont_txt b.cont_num {        
+        font-size: 40px;
+    }
+    .cont .cont_txt h3 {        
+        font-size: 35px;
+    }
+    .cont .cont_txt p {
+        line-height: 1.8;	
+        font-size: 16px;
+    }
+
+} /* 추가 */
+
+@media (min-width:1441px) {   
+	.mob {
+		display: none !important;
+	}
+} /* pc용 */
+
+@media (hover: hover) {
+    header .top_menu .gnb li a:hover, header .top_menu .gnb li a:hover i { 
+        color: #ee0000;
+    }
+    .vb .vb_wording form button:hover { 
+        background: #111;
+    }
+    .cont .cont_txt > a:hover { 
+        background: #fff;
+        color: #ee0000;
+        font-weight: bold;
+    }
+    footer .footer_select .select_title:hover, 
+    footer .footer_select .select_title:hover i,
+    footer .footer_select .language li a:hover {
+	background: #ee0000;
+	color: #fff;
+    }
+    .popup_modal.start_popup .pop_cont .conference_cont .invite .invite_list ul li:hover {
+        background: #ee0000;
+    }
+    
+} /* hover 제거용 */

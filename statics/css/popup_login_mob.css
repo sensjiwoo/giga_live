@@ -1,0 +1,292 @@
+@media (max-width:800px) {    
+
+    /* 팝업창_mob */
+    .popup_modal {	
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 9999;
+        display: none;
+    }
+    .popup_modal .popup_form {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-radius: 0px;
+    }
+    .popup_modal .popup_form > div { 
+        float: none;
+    }
+    .popup_modal .popup_form .pop_header {
+        background: #fff url(../images/popup_bg_mob.png) no-repeat center/cover;
+        width: 100vw;
+        height: 36.1vw;
+        overflow: hidden;
+        text-align: center;	
+        box-sizing: border-box;
+        position: relative;
+        display: block;        
+    }
+    .popup_modal .popup_form .pop_header .pop_menu {
+        margin: 0;
+    }
+    .popup_modal .popup_form .pop_header .pop_logo_mob {
+        width: 53vw;
+        padding-top: 5vw;
+    }
+    .popup_modal .popup_form .pop_header .pop_menu {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        margin-top: 0px;	
+    }
+    .popup_modal .popup_form .pop_header .pop_menu li a {
+        float: left;
+        display: block;
+        line-height: 60px;
+        height: 13.8vw;
+        line-height: 13.8vw;
+        width: 50%;
+        text-align: center;
+        color: #fff;
+        background: #999;
+        font-size: 5.2vw;
+        transition: .4s;
+        border-radius: 2.7vw 2.7vw 0 0;
+    }
+    .popup_modal .popup_form .pop_header li a:hover {
+        color: #111;
+    }
+    .popup_modal .popup_form .pop_header li a.on {
+        font-size: 5.2vw;
+        color: #fff;
+        font-weight: bold;
+        background: #0a0a0a;
+    }
+    .popup_modal .popup_form .pop_header li a.on:after {
+        display: none;
+    } 
+   
+    .popup_modal .pop_cont {
+        width: 100vw;	
+        height: 63.9vw;
+        padding-top: 44vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+   
+
+    .popup_modal .pop_cont:after {
+        content: "ⓒ2021.GIGAKOREA All rights reserved";
+        font-size: 12px;
+        color: #999;
+        position: absolute;
+        bottom: 6vw;
+    }
+    .popup_modal .pop_cont > div {
+        display: none;
+    }
+    .popup_modal .pop_cont > div.on {
+        display: block;
+    }
+
+    .popup_modal .pop_cont .pop_ex {
+        font-size: 16px;
+        color: #666;
+        text-align: center;
+        font-weight: bold;
+        transform: skew(-0.03deg);
+        font-family: 'NanumSquare';
+        letter-spacing: -0.05em;
+        line-height: 1.6;
+    }
+
+
+/* 
+수정시작       
+
+
+1. [moddify_popup .pop_menu] 클래스 [.pc]추가
+
+파일명) lounge.html
+예시)     
+    <ul class="pop_menu pc">
+        <li><a href="#none" class="on pop_menu1" data-a="login">개인정보수정</a></li>
+    </ul>
+
+
+2. 개인정보수정 모바일버전 수정
+
+파일명) popup_login_mob.css   
+
+예시)     */
+
+.popup_modal.modify_popup .pop_cont {
+    padding-top: 21vw;
+}
+.popup_modal.modify_popup .pop_cont .pop_ex,
+.popup_modal.modify_popup .pop_cont .pop_ex input#red_id {
+    font-size: 18px;
+    text-align: center;
+}
+.popup_modal.modify_popup .pop_cont form button.signup_btn {
+    font-size: 16px;        
+}
+    
+/* 수정끝 */
+
+    .popup_modal .pop_cont form input, .popup_modal .pop_cont form button {
+        width: 80vw;
+        height: 13vw;
+        line-height: 13vw;
+        margin-bottom: 2vw;
+        padding: 0 10px;
+        border-radius: 10px;
+        font-size: 16px;   
+        box-sizing: border-box;
+        border: 0;
+        background: #eee;
+    }
+
+    .popup_modal .pop_close_mob {
+        display: block;
+        background: #666;
+        width: 80vw;
+        height: 13vw;
+        line-height: 13vw;
+        margin-bottom: 18vw;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #eee;
+        font-size: 4.3vw;
+        text-align: center;
+    }
+    .popup_modal .login .pop_close_mob {
+        margin-bottom: 45vw;
+    }
+    .popup_modal .pop_close_mob:hover {
+        background: #111;
+    }
+    .popup_modal .pop_cont form button {
+        font-size: 4.3vw;	
+        background: #ee0000;
+        color: #fff;
+        font-family: 'NanumSquare';
+        transition: .4s;
+        cursor: pointer;
+    }
+    .popup_modal .pop_cont form button:hover {
+        background: #111;
+    }
+    .popup_modal .pop_cont form input:focus, .popup_modal .pop_cont form button {
+        outline: none;
+    }
+
+    .popup_modal .pop_cont > div span {	
+        width: 100%;
+        font-size: 12px;
+        color: #999;
+        text-align: center;
+        display: block;
+    }
+
+    .top_move {
+        position: fixed;
+        top: 88%;
+        right: 3%;
+        font-size: 49px;
+    }
+/* 회의시작_팝업 */
+    .popup_modal.start_popup .pop_cont_wrap {
+        width: 100vw;
+        overflow-y: visible; /* 수정 */
+    }
+
+
+
+    .popup_modal.start_popup .popup_form .pop_header li a.on {
+        width: 100%;
+        border-radius: 0;
+    }
+/* 수정 0517 */
+    .popup_modal .popup_form .pop_header  .pop_j li a.on:after {
+        display: none;
+    } 
+/* 수정 0517 끝 */
+
+
+    .popup_modal.start_popup .pop_cont {
+        padding: 20px 0;
+    }
+
+    .popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select a.invite_btn1 {
+        right: 10px;
+    }
+    
+    .popup_modal.start_popup .pop_cont .conference_cont .invite .invite_list ul li {
+        padding: 0;
+    }
+    /* 초대자 선택창 */
+    .popup_modal.start_popup .pop_cont .conference_cont .invite {
+        position: relative;
+        width: 100%;
+        height: auto;
+        line-height: 50px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 0;
+        background: #000;
+    }
+    .popup_modal.start_popup .pop_cont > div span {
+        font-size: 14px;
+    }
+    .popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_select_id {
+        padding: 0 20px 0 10px;	
+        box-sizing: border-box;
+        margin-top: -50px;
+        background: #eee;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+    .popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_select_id span {
+        font-size: 14px;
+        color: #333;
+        background: #fff;
+        margin-right: 10px;
+        position: relative;
+        width: auto;
+    }
+    
+    .popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_select_id span:after {
+        content: ",";
+        position: absolute; 
+        right: -10px;
+        color: #666;
+        display: none;
+    }
+
+    .popup_modal.start_popup .pop_cont:after {
+        display: none;
+    }
+
+    .popup_modal input, 
+    .popup_modal textarea {
+        font-size: 15px;
+    }
+    .popup_modal .pop_close_mob {
+        font-size: 16px;
+    }
+
+
+}

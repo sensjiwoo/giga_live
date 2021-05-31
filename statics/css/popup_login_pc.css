@@ -1,0 +1,412 @@
+/* 팝업창_pc */
+.popup_modal {	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 9990;
+	display: block;
+}
+.popup_modal .popup_form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 700px;
+	height: 500px;
+	border-radius: 30px;
+	overflow: auto;    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.popup_modal .popup_form > div { 
+	float: left;
+}
+.popup_modal .popup_form .pop_header {
+	background: #0a0a0a url(../images/popup_bg.png) no-repeat center/cover;
+	width: 200px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/* 수정0517 */
+.popup_modal .popup_form .pop_header .pop_logo {
+	width: 170px;
+	margin-bottom: 30px;
+}
+/* 수정0517 끝 */
+.popup_modal .popup_form .pop_header .pop_menu {
+	width: 100%;
+	margin: 20px 0;
+}
+.popup_modal .popup_form .pop_header li a {
+	display: block;
+	line-height: 60px;
+	height: 60px;
+	text-align: center;
+	color: #888;
+	font-size: 20px;
+	transition: .4s;
+}
+.popup_modal .popup_form .pop_header li a:hover {
+	color: #fff;
+}
+.popup_modal .popup_form .pop_header li a.on {
+	font-size: 28px;
+	color: #fff;
+	width: 100%;
+}
+.popup_modal .popup_form .pop_header  .pop_j li a.on:after {
+	content: "";
+	display: block;
+	position: relative;
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;
+	height: 2px;
+	background: #fff;
+} 
+.popup_modal .popup_form .pop_close {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+.popup_modal .popup_form .pop_close img {
+	width: 100%;
+}
+.popup_modal .pop_cont {
+	width: 500px;	
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+    background: #fff;
+}
+.popup_modal .pop_cont:after {
+	content: "";
+	font-size: 12px;
+	color: #999;
+	position: absolute;
+	bottom: 27px;
+}
+.popup_modal .pop_cont > div {
+	display: none;	
+}
+.popup_modal .pop_cont > div.on {
+	display: block;
+}
+
+/* 수정-1 */
+.popup_modal .pop_cont .pop_ex {
+	font-size: 20px;
+	color: #666;
+	text-align: center;
+	font-weight: bold;
+	transform: skew(-0.03deg);
+	font-family: 'NanumSquare';
+	letter-spacing: -0.05em;
+	line-height: 1.6;
+}
+/* 수정-1 끝 */
+.popup_modal .pop_cont form {
+	margin-top: 30px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;	
+}
+.popup_modal .pop_cont form input, .popup_modal .pop_cont form button {
+	width: 350px;
+	height: 50px;
+	margin-bottom: 10px;
+	line-height: 30px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 0;
+	background: #eee;
+}
+.popup_modal .pop_cont form button {
+	background: #ee0000;
+	color: #fff;
+	font-family: 'NanumSquare';
+	font-size: 16px;
+	transition: .4s;
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+.popup_modal .pop_cont form button:hover {
+	background: #111;
+}
+.popup_modal .pop_cont form input:focus, .popup_modal .pop_cont form button {
+	outline: none;
+}
+
+.popup_modal .pop_cont > div > span {	
+	width: 100%;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	display: block;
+}
+
+
+/* 정보수정 modify */
+
+
+.popup_modal.modify_popup .popup_form .pop_header .pop_menu {
+	margin: 20px 0 80px;
+}
+.popup_modal.modify_popup .popup_form .pop_header li a.on:after {
+	display: none;
+}
+
+/* 회의생성 */
+.popup_modal.start_popup .popup_form:after {
+	content: ""; 
+	clear: both;
+	display: block;
+}
+.popup_modal.start_popup .pop_header {
+	float: left;
+
+}
+.popup_modal .popup_form .pop_header li a.on:after {
+	display: none;
+}
+.popup_modal.start_popup .pop_cont {
+	height: auto !important;
+	padding: 40px 0;
+	box-sizing: border-box;
+	width: auto;
+}
+.popup_modal.start_popup .pop_cont_wrap {
+	float: left;
+	width: 500px;
+	height: 500px;
+	overflow-y: auto;
+	-ms-overflow-style: none;
+}
+.popup_modal.start_popup .pop_cont_wrap::-webkit-scrollbar { display: none; }
+
+.popup_modal.start_popup .pop_cont .pop_ex {
+	font-size: 24px;
+	color: #111;
+	text-align: center;
+	font-weight: bold;
+	transform: skew(-0.03deg);
+	font-family: 'NanumSquare';
+	letter-spacing: -0.05em;
+	line-height: 1.6;
+}
+
+
+/* .popup_modal .pop_cont {
+	width: 500px;	
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+    background: #fff;
+} */
+
+
+
+.popup_modal.start_popup .pop_cont .start_cont {
+	width: 80%;
+	line-height: 1.6;
+}
+.popup_modal.start_popup .pop_cont .conference_cont {
+	width: 100%;	
+}
+.popup_modal.start_popup .pop_cont .conference_cont .cont_ex {
+	color: #333;
+	font-size: 16px;
+	text-align: left;
+}
+
+.popup_modal.start_popup .pop_cont .conference_cont .pop_ex {
+	font-size: 24px;
+	color: #111;
+} 
+
+.popup_modal.start_popup .pop_cont .conference_cont p {
+	margin: 5px 0;
+}
+
+.popup_modal.start_popup .pop_cont .conference_cont input,
+.popup_modal.start_popup .pop_cont .conference_cont textarea,
+.popup_modal.start_popup .pop_cont .conference_cont button,
+.popup_modal.start_popup .pop_cont .conference_cont .conference_make {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+	line-height: 30px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: 0;
+	background: #eee;
+}
+.popup_modal.start_popup .pop_cont .conference_cont textarea {
+	line-height: 1.6;
+	height: 70px;
+}
+
+.popup_modal.start_popup .pop_cont .conference_cont .invite {
+	position: relative;
+	width: 100%;
+	height: auto;
+	line-height: 50px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 0;
+}
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_wrap {
+	position: relative;
+}
+
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select {
+	background: #eee;
+	position: relative;
+}
+
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select a.invite_btn1 {
+	position: absolute;
+	top: 5px;
+	display: block;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	z-index: 10;
+	background:url(../images/btn_up.png) no-repeat center;
+}
+
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_close_btn {
+	background:url(../images/btn_down.png) no-repeat center;
+	position: absolute;
+	right: 20px;
+}
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_close_btn {
+	transform: rotate(180deg);
+}
+
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select input {
+	background: none;
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	font-size: 14px;
+}
+
+/* css 추가시작 : 초대자 선택 시 옆에 x 버튼 */
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_select_id {
+	padding: 0 20px 0 10px;	
+	box-sizing: border-box;
+	margin-top: -50px;
+	background: #eee;
+	position: relative;
+	z-index: 1;
+	display: none;
+}
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_select_id span {
+	padding: 5px 38px 5px 20px;
+	margin: 8px 0;
+	font-size: 13px;
+	border: 1px solid #d8d8d8;
+	border-radius: 30px;
+	height: 20px;
+	background: #fff;
+	line-height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+	position: relative;
+}
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_select_id span:last-child:after {
+	display: none;
+}
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_select_id span:after {
+	content: ",";
+	position: absolute; 
+	right: -10px;
+	color: #666;
+/*
+추가 : 쉼표 빼고싶으시면 
+display: none; 
+*/
+}
+
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_select_id span i {
+	width: 13px;
+	height: 13px;
+	display: block;
+	position: absolute;
+	z-index: 1;
+	right: 16px;
+	top: 8px;
+	background: url(../images/close_btn.png) no-repeat center/cover;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_select .invite_select_id span i:hover {
+	background: url(../images/close_btn_red.png) no-repeat center/cover;
+}
+
+/* css 추가 수정끝 */
+
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_list {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	overflow: auto;
+	height: 160px;
+	z-index: 10;
+	transform: translate(0, -100%);
+	display: none;
+}
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_list ul {
+	background: #fff;
+	border: 1px solid #eee;
+	box-sizing: border-box;
+	background: #111;
+		
+}
+.popup_modal.start_popup .pop_cont .conference_cont .invite .invite_list ul li {
+	font-size: 13px;
+	padding-left: 20px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	cursor: pointer;
+}
+.popup_modal.start_popup .pop_cont .conference_cont .conference_make {
+	display: block;
+	background: #ee0000;	
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.popup_modal {
+	display: none;
+}

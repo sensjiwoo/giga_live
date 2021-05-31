@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>GIGA TV</title>
+
+    <link rel="shortcut icon" href="statics/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="statics/css/reset.css">
+    <link rel="stylesheet" href="statics/css/style.css">
+    <link rel="stylesheet" href="statics/css/m_style.css">
+    <link rel="stylesheet" href="statics/css/popup_login_pc.css">
+    <link rel="stylesheet" href="statics/css/popup_login_mob.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src=" https://kit.fontawesome.com/8f73079239.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <h1>
+                <a href="index.html">
+                    <img src="statics/images/logo_black.png" alt="gigatv로고">
+                </a>
+            </h1>
+        </div>
+    </header>
+    <section id="top" class="vb">
+        <h2>비주얼배너 영역</h2> 
+        <div class="vb_wording wrap">
+            <div class="vb_bg pc">
+                <div class="vb_img_bg1"></div>
+                <div class="vb_imgset vb_img_bg2"></div>
+                <div class="vb_imgset vb_img_man"></div>
+            </div>            
+            <p class="wording_txt">
+                <span>사업</span>부터 <span>교육</span>까지<br>언제 어디에서나 <br class="mob"><span class="point point_txt font_blue">GIGA TV</span>와 함께
+            </p>
+            <form>
+                <input type="text" class="login_id" placeholder="아이디">
+                <input type="password" class="login_pw" placeholder="비밀번호">
+                <button type="button" class="login_btn" onclick="location.href='lounge.html'">로그인</button>
+                <button type="button" class="signup_btn popup_signup_open">회원가입</button>      
+            </form>
+        </div>        
+    </section> 
+    <!-- 수정0517 푸터 변경 -->   
+    <footer>
+        <h2>회사정보 영역</h2>
+        <div class="wrap">
+            <div class="footer_txt">
+                <P>GIGAKOREA</p>
+                <address>
+                    기가코리아 주식회사 대표이사 : 이철연 <br>사업자등록번호 : 698-86-01154<br>
+                    본사 : 서울특별시 금천구 벚꽃로 286 삼성리더스타워 305호 <br>서울지사 : 서울특별시 강남구 도산대로 435 삼이빌딩 B1<br>
+                    <a href="mailto:gigaemail@gigait.co.kr">이메일 : gigaemail@gigait.co.kr</a><br>FAX : 02-6914-9367<br>
+                </address>
+                <span class="copy">&copy; 2021. GIGAKOREA all rights reserved.</span>
+            </div>
+            <div class="footer_select">
+                <a href="#none" class="select_title"><i class="fas fa-globe-americas"></i>&nbsp; Language<span>&dtrif;</span></a>
+                <ul class="language">
+                    <li><a href="#none">Korea South</a></li>
+                    <li><a href="#none">USA</a></li>
+                    <li><a href="#none">China</a></li>
+                </ul>                
+            </div>
+        </div>
+    </footer>
+    <!-- 수정0517 푸터 변경 끝 -->   
+    <div class="popup_modal login_popup">
+        <h2>회원가입 및 로그인 팝업창</h2>
+        <div class="popup_form">
+            <div class="pop_header">
+                <img src="statics/images/logo_white.png" alt="gigatv로고" class="pc pop_logo">
+                <img src="statics/images/logo_black.png" alt="gigatv로고" class="mob pop_logo_mob">
+                <ul class="pop_menu pop_j">
+                    <li><a href="#none" class="on_remove login_menu" data-a="login">로그인</a></li>
+                    <li><a href="#none" class="on_remove signup_menu" data-a="signup">회원가입</a></li>
+                </ul>                
+            </div>
+            <div class="pop_cont">
+                <div class="signup on_remove">
+                    <h2>회원가입 작성</h2>
+                    <p class="pop_ex">GIGA TV에 오신 것을 진심으로 환영합니다.</p>
+                    <form class="pop_signup">
+                        <input type="text" class="signup_id" placeholder="아이디">
+                        <input type="text" class="signup_name" placeholder="이름">
+                        <input type="password" class="signup_pw" placeholder="비밀번호">
+                        <input type="password" class="signup_pw_re" placeholder="비밀번호확인">
+                        <button type="button" class="signup_btn">회원가입</button>
+                    </form>
+                    <a href="#none" class="pop_close_mob mob">닫기</a>
+                </div>
+                <div class="login on_remove">
+                    <h2>로그인 영역</h2>
+                    <p class="pop_ex">
+                        아직 로그인 전이시군요?<br>
+                        로그인 후 이용하실 수 있습니다.     
+                    </p>
+                    <form class="pop_signup">
+                        <input type="text" class="login_id" placeholder="아이디">
+                        <input type="password" class="login_pw" placeholder="비밀번호">
+                        <button type="button" class="login_btn">로그인</button>
+                    </form>
+                    <a href="#none" class="pop_close_mob mob">닫기</a>
+                </div>
+                <a href="#none" class="pop_close pc">
+                    <img src="statics/images/close_btn.png" alt="닫기버튼">
+                </a>                
+            </div>
+        </div>
+    </div>
+    <!-- <a href="#top" class="top_move">
+        <img src="images/top_move_btn1.png" alt="웹사이트 상위로 이동하기">
+    </a> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="statics/js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+</body>
+</html>
