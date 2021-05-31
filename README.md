@@ -1,2 +1,2 @@
 # giga_live
-main/lounge
+main,lounge
