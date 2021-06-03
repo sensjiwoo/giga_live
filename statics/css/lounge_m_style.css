@@ -367,13 +367,13 @@ header.video .video_btn .chat_leave {
 } /* 모바일가로,태블릿 */
 
 @media (min-width:641px) and (max-width:1440px) {   	
-    .mob {
+    .pc {
         display: none !important;
     }
-    
+    /* 수정 0603 오전 */
     .lounge_cont .video_meeting {
-        width: 80%;
-    }  
+        width: 100%;
+    }
  	
 } /* 태블릿 가로 */
 
@@ -381,6 +381,9 @@ header.video .video_btn .chat_leave {
 	.mob {
 		display: none !important;
 	}
+
+
+
 } /*pc용*/
 
 @media (hover: hover) {
@@ -394,3 +397,30 @@ header.video .video_btn .chat_leave {
         background: #0a0a0a;
     }
 } /* hover 제거용 */
+
+
+
+/* 수정 0603 오전 ___ start (추가) */
+
+@media (orientation: landscape) {
+	/* Landscape 모드일 때 적용할 CSS */
+    body {
+        background: #eee;
+    }
+    header.lounge {
+        position: fixed;
+    }
+    .lounge_cont {
+        margin-left: 270px;
+    }
+    .lounge_cont {
+        height: auto;
+    }
+}
+@media (min-width:481px) {   	
+    .video_m_list li a.watch {
+        background: #ee0000 url(../images/btn_play_white.png) no-repeat 52% 49% ;
+    }
+} 
+
+/* 수정 0603 오전 ___ end (추가) */
