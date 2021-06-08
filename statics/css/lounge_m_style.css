@@ -1,4 +1,4 @@
-@media (max-width:480px){    	
+@media (max-width:480px) {    	
 	
 	.pc {
 		display: none !important ;
@@ -47,8 +47,6 @@ align-items: center;
 padding: 8px;
 
 
-
-
 }
 /* 햄버거 버튼 애니메이션 */
 .hamburger {
@@ -66,14 +64,6 @@ width: 30px;
 height: 2px;
 }
 
-
-
-
-
-.lounge #ham_middle {
-    /* width: 38px;  0527 수정 (삭제) */
-    /* margin-right: 0;  0527 수정 (삭제) */
-}
 
 .hamburger_btn.active .hamburger:nth-child(2){
     opacity: 0;
@@ -367,7 +357,7 @@ header.video .video_btn .chat_leave {
 } /* 모바일가로,태블릿 */
 
 @media (min-width:641px) and (max-width:1440px) {   	
-    .pc {
+    .mob {
         display: none !important;
     }
     /* 수정 0603 오전 */
@@ -417,10 +407,117 @@ header.video .video_btn .chat_leave {
         height: auto;
     }
 }
-@media (min-width:481px) {   	
+@media (min-width:481px) and (max-width:1280px) {   	
     .video_m_list li a.watch {
         background: #ee0000 url(../images/btn_play_white.png) no-repeat 52% 49% ;
     }
+    
+    .video_m_list li a.watch > span:first-child { 
+        display: none !important;
+    }
+    
 } 
 
 /* 수정 0603 오전 ___ end (추가) */
+
+/* 수정 0603 2차 ___ start */
+@media (min-width:481px) and (max-width:1280px) {   	
+    .video_m_list li a.watch > span:first-child { 
+        display: none !important;
+    }
+} 
+
+@media (orientation: landscape) {
+    
+    .lounge_cont {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .lounge_cont h3 {
+        font-size: 36px;
+    }
+    
+    .lounge_cont .video_meeting {
+    
+        height: 68vmin;
+
+    }
+    .lounge_cont h3 {
+        margin-left: 10px;
+    }
+    
+}
+@media (min-width:720px) and (max-width:800px) {   	
+
+
+
+    .lounge_cont {
+
+        padding: 30px;
+    }
+    .lounge_cont .video_meeting {
+
+        padding: 20px;
+
+    }
+    
+    header.lounge .personal span.name {
+        height: 25px;
+        font-size: 18px;
+    }
+    .video_m_list li > a, .video_m_list li > span {
+
+        font-size: 16px;
+
+    }
+    .popup_modal .popup_form {
+        height: 430px !important;
+    }
+    .popup_modal .popup_form {
+        overflow: hidden !important;
+    }
+    .popup_modal .pop_cont {
+        height: 430px !important;
+    }
+    .popup_modal .pop_cont form button {
+        margin-bottom: 0px !important;
+    }
+    .popup_modal.start_popup .pop_cont_wrap {
+        height: 430px !important;
+    }
+    .popup_modal .popup_form .pop_header li a.on {
+        font-size: 26px !important;
+    }
+} 
+/* 수정 0603 2차 ___ end */
+
+
+
+/* 수정 0603 5차 ___ start */
+
+@media (min-width:481px) and (max-width:800px) {   	
+
+header.lounge .personal {
+
+    padding: 20px 0 0 0;
+}
+header.lounge .personal a.personal_modify {
+    top: 10px;
+}
+header.lounge .lounge_wrap .logout_btn {
+    bottom: 2vw;
+}
+}
+
+@media (min-width:481px) and (max-width:1280px) {   	
+    .video_m_list li a.watch {
+        background: #ee0000 url(../images/btn_play_white.png) no-repeat 52% 49% ;
+    }
+    .video_m_list li a.watch:hover {
+        background: #ee0000 url(../images/btn_play_white.png) no-repeat 52% 49% ;
+    }
+} 
+/* 수정 0603 5차 ___ end */
+
+/* 0607 수정 */

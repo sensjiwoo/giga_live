@@ -1,4 +1,8 @@
-@media (max-width:800px) {    
+
+
+
+/* @media (min-width:481px) and (max-width:790px) {  삭제 0607  	     */
+    @media (max-width:790px) {   	   
 
     /* 팝업창_mob */
     .popup_modal {	
@@ -168,7 +172,7 @@
         border-radius: 10px;
         box-sizing: border-box;
         color: #eee;
-        font-size: 4.3vw;
+        font-size: 16px;
         text-align: center;
     }
     .popup_modal .login .pop_close_mob {
@@ -178,7 +182,7 @@
         background: #111;
     }
     .popup_modal .pop_cont form button {
-        font-size: 4.3vw;	
+        font-size: 16px;	
         background: #ee0000;
         color: #fff;
         font-family: 'NanumSquare';
@@ -289,4 +293,10 @@
     }
 
 
+
+    
+
+
 }
+
+

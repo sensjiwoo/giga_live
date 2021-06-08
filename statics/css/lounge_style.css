@@ -190,3 +190,43 @@ header.lounge .lounge_wrap .logout_btn {
     color: #fff;
     line-height: 33px;
 }
+
+
+/* 0603 2차수정 */
+header.lounge .personal a.personal_img {
+    /* background: #939393; */
+    background: #939393 url(../images/info_face.svg) no-repeat center/85%;
+    /* 첨부파일 > images 안에 추가해주세요 */
+}
+header.lounge .personal a.personal_img i {
+    display: none;
+}
+
+/* 0603 4차수정 */
+
+.video_meeting::-webkit-scrollbar { 
+    margin-right: 10px;
+    width: 5px; 
+    background-color: #eee; 
+}
+.video_meeting::-webkit-scrollbar-thumb { 
+    background-color: rgba(255, 0, 0, 1); 
+    border-radius: 100px;
+    background-clip: padding-box; 
+    border: 0px solid transparent; 
+}
+.video_meeting::-webkit-scrollbar-track { 
+    background-color: rgba(0, 0, 0, 0.9); 
+    border-radius: 100px;
+
+}
+
+/* 수정 0603 5차 ___ start */
+header.lounge .personal a.personal_modify i {
+    display: none !important;
+}
+header.lounge .personal span {
+    font-size: 18px;
+}
+
+/* 수정 0603 5차 ___ end */
