@@ -1,6 +1,6 @@
 /* webfont */
 /*  font-family: 'Noto Sans KR';  font-family: 'NanumSquare';  font-family: 'gsb'; font-family: 'gsm'; */
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @font-face {
     font-family: 'gsm';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
