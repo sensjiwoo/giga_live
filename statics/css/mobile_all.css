@@ -4,16 +4,6 @@
 	.pc {
 		display: none !important ;
 	}
-    .wrap { 
-        width: 88vw; 
-        margin: 0 auto; 
-    }   
-
-/* __________________ 메인 __팝업창 __________________ */
-
-    
-
-
 
     
     
@@ -24,7 +14,9 @@
 
 /* 2. tablet (768px ~ 1023px) */
 @media all and (min-width:768px) and (max-width:1023px) {
-    
+    .mob {
+		display: none !important ;
+	}  
     
     
     
@@ -35,8 +27,9 @@
 
 /* 3. PC (1024px) */ 
 @media all and (min-width:1024px) {
-    
-    
+    .mob {
+		display: none !important ;
+	}   
     
     
 /* Pc __Style__End */ }
